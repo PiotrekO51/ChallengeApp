@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Witaj mój nowy swiecie !");
+Console.WriteLine("Mam na imię Piotrek  :)");
+Console.WriteLine(" Zaczyna mi się tu podobać");
+
