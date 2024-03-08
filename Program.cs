@@ -1,21 +1,23 @@
-﻿using System;
+﻿var liczba = 54545456;
+string liczbaJakoString = liczba.ToString();
+char[] litery = liczbaJakoString.ToArray();
+char[] numeryLiter = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-var name = "Ewa";
-var sex = "męszczyzna";
-var age = 17;
+Console.WriteLine(liczbaJakoString);
 
-if ( sex == "kobieta" && age <= 29)
+Console.WriteLine("Liczba do sprawdzenia -> " + liczba);
+Console.WriteLine("Zestawienie powtażalności cyfr");
+
+foreach (var cyfra in numeryLiter)
+
 {
-    Console.WriteLine( "Kobieta poniżej 30 lat");
-
+    var licznik = 0;
+    
+    foreach (var litera in litery)
+        {
+            if (cyfra == litera)
+                licznik++;
+        
+        }
+    Console.WriteLine(cyfra + "->" + licznik);
 }
-else  if ( name == "Ewa" && age == 30 )
-
-    {
-        Console.WriteLine("Ewa, lat 30");
-    }
-else if ( sex == "męszczyzna" && age <=18 )
-
-    {
-        Console.WriteLine("Niepełnoletni męszczyzna");
-    }
