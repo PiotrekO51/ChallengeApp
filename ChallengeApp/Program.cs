@@ -38,5 +38,6 @@ foreach (var number2 in numbers2 )
         foreach (var letter in letters)
             if(number2 == letter)
                 counter2++;
-        Console.WriteLine(number2 + "<=> " + counter2);
+        Console.WriteLine(number2 + " <=> " + counter2);
 }
+Console.WriteLine("Zrobione i działa poprawnie :) ");
