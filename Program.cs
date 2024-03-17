@@ -37,9 +37,11 @@ Console.WriteLine(emp2.Name + " Wynik " + emp2.Result);
 Console.WriteLine(emp3.Name + " Wynik " + emp3.Result);
 
 List<Employee> emps = new List<Employee>()
+
 {
     emp1, emp2, emp3
 };
+
 
 int maxResult = 0;
 
@@ -56,10 +58,8 @@ foreach (var emp in emps)
 }
 
 Console.WriteLine("====================================");
-
 Console.WriteLine("    Najlepszy wynik osiąga ");
-
 Console.WriteLine("     " + empMaxResult.Name + " " + empMaxResult.Surname + " lat " + empMaxResult.Age);
 Console.WriteLine("      Z wynikiem " + maxResult + " pkt ");
-Console.WriteLine("=====================================");
+Console.WriteLine("====================================");
 
